@@ -1,4 +1,3 @@
-# 淘宝店：维克派森
 # 这段代码通过 pandas 和 numpy 库读取 CSV 文件的数据并计算移动平均线（MA5、MA10 和 MA20）。
 # 当 MA5 大于 MA10 并且 MA10 大于 MA20 时买入，当 MA5 小于 MA10 并且 MA10 小于 MA20 时卖出。
 # 回测期间的买卖点日期、最终盈利资金、收益率，并生成收益走势图。
@@ -10,7 +9,7 @@ import matplotlib.pyplot as plt
 
 # 读取CSV文件
 data = pd.read_csv('C:/Users/1/Desktop/603993历史数据1.csv', parse_dates=['Date'], index_col='Date')
-#CSV股票走势文件可以私聊店主帮爬取下载
+#CSV股票走势文件可以私聊我帮爬取下载
 
 # 确保日期索引是单调递增的
 data = data.sort_index()
